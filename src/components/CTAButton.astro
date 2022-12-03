@@ -1,0 +1,19 @@
+---
+export interface Props {
+  btnText?: string;
+  btnUrl: string;
+  btnTarget?: string;
+}
+const {
+  btnText = "Sign up",
+  btnUrl = "#",
+  btnTarget = "_self",
+} = Astro.props as Props;
+---
+
+<a href={btnUrl} target={btnTarget}>
+  <button
+    class="cta-button p-4 bg-cta-500 text-white mt-12 rounded-md hover:bg-cta-700 transition w-full max-w-md hover:-translate-y-1">
+    <p class="font-medium text-lg font-hand">{btnText}</p>
+  </button>
+</a>

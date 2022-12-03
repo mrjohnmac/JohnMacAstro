@@ -1,0 +1,29 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ResourceCard from "../components/ResourceCard.astro";
+---
+
+<MainLayout>
+  <PageHero
+    pageTitle="Freelancer resources"
+    heroImage="../assets/images/resources-flatlay.jpeg"
+    pageSubtitle="Discover apps, tools, services, and plugins that I use and recommend. A condenced collection of resources, if you're wondering what tools to use."
+  />
+  <section class="wrapper">
+    <div class="subhead-wrapper mb-24">
+      <h2>Website Pagebuilders and systems</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis
+        pariatur dolore? Culpa odio eligendi voluptatibus eaque aut id quo neque
+        sunt beatae enim iste error voluptatum, adipisci sint deleniti?
+      </p>
+    </div>
+    <div class="grid grid-col-1 lg:grid-cols-2 gap-x-16">
+      <ResourceCard />
+      <ResourceCard />
+      <ResourceCard />
+      <ResourceCard />
+    </div>
+  </section>
+</MainLayout>

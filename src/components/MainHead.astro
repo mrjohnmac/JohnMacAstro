@@ -1,0 +1,37 @@
+---
+import "../styles/global.css";
+
+export interface Props {
+  PageTitle?: string;
+  description?: string;
+}
+
+const {
+  PageTitle = "I'm John Mac",
+  description = "Web Designer and Systems Thinker",
+} = Astro.props;
+---
+
+<meta charset="UTF-8" />
+<meta name="description" property="og:description" content={description} />
+<meta name="viewport" content="width=device-width" />
+<meta name="generator" content={Astro.generator} />
+<title>{PageTitle}</title>
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap"
+  rel="stylesheet"
+  <link
+  rel="preconnect"
+  href="https://fonts.googleapis.com"
+/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap"
+  rel="stylesheet"
+/>

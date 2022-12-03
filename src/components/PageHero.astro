@@ -1,0 +1,56 @@
+---
+import CTAButton from "./CTAButton.astro";
+import Divider from "../assets/images/Divider.svg";
+import Placeholder from "../assets/images/placeholder.jpg";
+
+export interface Props {
+  pageTitle: string;
+  pageSubtitle: string;
+  heroImage: string;
+}
+const {
+  pageTitle = "New Page",
+  pageSubtitle = "Lorem",
+  heroImage = Placeholder,
+} = Astro.props as Props;
+---
+
+<section
+  class="relative m-0 main-hero pt-32 pb-48 mb-32 bg-primary-900 overflow-hidden">
+  <div
+    class="wrapper relative text-slate-100 hero-wrapper flex md:flex-row flex-col-reverse gap-32">
+    <div class="hero-intro relative w-full flex flex-col md:w-4/6">
+      <div
+        class="absolute top-0 -left-16 w-72 h-72 filter blur-3xl bg-purple-700 opacity-30 rounded-full">
+      </div>
+      <div class="content-wrapper z-50 space-y-4">
+        <h1 class="hero-header text-3xl capitalize font-bold text-slate-100">
+          {pageTitle}
+        </h1>
+        <p class="hero-subheader text-xl">
+          {pageSubtitle}
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="hero-image relative z-50 w-full items-center place-content-center md:place-content-end flex md:w-2/6">
+      <div
+        class="image-wrapper rounded-full w-52 h-auto overflow-hidden border-2 border-slate-200 aspect-square">
+        <img
+          src={heroImage}
+          width="100%"
+          height="auto"
+          alt="John Mac"
+          class="object-cover"
+        />
+      </div>
+    </div>
+    <div
+      class="absolute top-52 -right-16 w-72 h-72 filter blur-3xl bg-purple-700 opacity-30 z-1 rounded-full">
+    </div>
+  </div>
+  <div class="w-full absolute bottom-0">
+    <img src={Divider} width="101%" height="auto" alt="" />
+  </div>
+</section>

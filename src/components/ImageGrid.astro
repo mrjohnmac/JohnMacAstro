@@ -1,0 +1,49 @@
+---
+---
+
+<div
+  class="grid grid-cols-2 grid-rows-2 gap-4 justify-end items-center image-grid-container max-w-[500px]">
+  <div class="image-grid-wrapper max-w-[90%] flex self-end">
+    <img
+      src="../assets/images/grid-image-two.jpeg"
+      alt="Creators remote work essentials"
+      class="image-grid-img"
+    />
+  </div>
+  <div
+    class="image-grid-wrapper flex self-start justify-start sm:self-center max-w-[50%] translate-y-[12vw]">
+    <img
+      src="../assets/images/grid-image-three.jpeg"
+      alt="The NyPhy mechanical keyboard"
+      class="image-grid-img"
+    />
+  </div>
+  <div
+    class="image-grid-wrapper flex self-start sm:self-end max-w-[65%] translate-x-[5vw] translate-y-[6vw]">
+    <img
+      src="../assets/images/grid-image-one.jpeg"
+      alt="Reading and self education"
+      class="image-grid-img"
+    />
+  </div>
+  <div
+    class="image-grid-wrapper flex self-start max-w-[77%] -translate-y-12 -translate-x-12 sm:justify-center sm:">
+    <img
+      src="../assets/images/grid-image-four.jpeg"
+      alt="Choosing the right coffee shops"
+      class="image-grid-img"
+    />
+  </div>
+</div>
+<style>
+  @tailwind base;
+  .image-grid-wrapper img {
+    transition: all 0.3s ease-in-out;
+    border: 2px solid;
+    overflow: hidden;
+    border-color: theme(colors.slate.600);
+    border-radius: 11%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+</style>

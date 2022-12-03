@@ -1,0 +1,64 @@
+---
+import Placeholder from "../assets/images/grid-image-two.jpeg";
+
+export interface Props {
+  image: string;
+  title: string;
+  description: string;
+  link: string;
+}
+
+const {
+  image = Placeholder,
+  title = "Card Title",
+  description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ullam eligendi error assumenda laboriosam temporibus ut rem!",
+  link = "#",
+} = Astro.props as Props;
+---
+
+<figure
+  class="resource-card relative w-full flex flex-row rounded-md overflow-hidden p-6 md:p-0 mb-4 gap-4 bg-gradient-to-bl from-slate-50 to bg-slate-200">
+  <div
+    class="resource-image-wrapper relative aspect-square h-full hidden md:block">
+    <img src={Placeholder} alt={title} class="resource-img w-48 object-cover" />
+    <span
+      class="resource-tag absolute bottom-1 bg-slate-600 text-white rounded-r-md py-[2px] capitalize px-4 text-sm"
+      >Tag Name</span
+    >
+  </div>
+  <div class="resource-body md:py-4 md:px-3">
+    <h4 class="text-primary-500">{title}</h4>
+    <p class="text-base">{description}</p>
+
+    <span
+      class="resource-link absolute top-2 right-3 bg-cta-500 hover:bg-cta-200 hover:text-cta-800 text-white py-[2px] px-4 text-sm rounded-md"
+      ><a href={link} target="_blank">Link</a>
+    </span>
+  </div>
+</figure>
+<style>
+  @keyframes cardHover {
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(0px, -5px);
+    }
+  }
+  .resource-card {
+    transition: 0.2s all ease;
+  }
+  .resource-card:hover {
+    transform: translateY(-6px);
+  }
+  .resource-card:hover .resource-link {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .resource-link {
+    transition: 0.2s all ease-out;
+    opacity: 0;
+    transform: translateY(-50px);
+    z-index: 0;
+  }
+</style>

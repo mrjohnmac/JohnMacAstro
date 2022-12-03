@@ -1,0 +1,31 @@
+---
+import Placeholder from "../assets/images/placeholder.jpg";
+
+export interface Props {
+  tmName?: string;
+  tmTitle?: string;
+  tmImage?: string;
+  tmBody?: string;
+}
+const {
+  tmName = "Firstname Lastname",
+  tmTitle = "The most awesome title",
+  tmImage = Placeholder,
+  tmBody = "Nostrud officia consequat excepteur minim reprehenderit nostrud. Sit sit proident elit in do consectetur culpa nulla proident ex elit consectetur ex enim. Aute enim eiusmod officia nulla aliqua anim qui ex est. Labore incididunt velit proident adipisicing do.",
+} = Astro.props as Props;
+---
+
+<article class="tm-card">
+  <h4 class="tm-name text-lg">{tmName}</h4>
+  <p class="tm-title text-sm text-slate-400">
+    {tmTitle}
+  </p>
+  <img
+    src={tmImage}
+    alt="Image"
+    class="tm-photo w-full aspect-video object-cover rounded-md mt-8 mb-8"
+  />
+  <p class="tm-testimonial text-slate-600 text-base lg:text-sm">
+    {tmBody}
+  </p>
+</article>

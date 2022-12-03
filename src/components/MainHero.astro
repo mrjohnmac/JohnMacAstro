@@ -1,0 +1,48 @@
+---
+import CTAButton from "./CTAButton.astro";
+import Divider from "../assets/images/Divider.svg";
+---
+
+<section
+  class="relative m-0 main-hero pt-32 pb-48 bg-primary-900 overflow-hidden">
+  <div
+    class="wrapper relative text-slate-100 hero-wrapper flex md:flex-row flex-col-reverse gap-32">
+    <div class="hero-intro relative w-full flex flex-col md:w-4/6">
+      <div
+        class="absolute top-0 -left-16 w-72 h-72 filter blur-3xl bg-purple-700 opacity-30 rounded-full">
+      </div>
+      <div class="content-wrapper z-50 space-y-4">
+        <p class="pre-header font-hand text-l text-slate-300">I'm John Mac</p>
+        <h1 class="hero-header text-3xl font-bold text-slate-100">
+          Web Designer, systems thinker, developer, morning coffee brewer. An
+          Apple a day.
+        </h1>
+        <p class="hero-subheader text-xl">
+          Porta odio molestie litora dui iaculis mauris, mus imperdiet faucibus
+          lacus fames non erat, feugiat congue sollicitudin rutrum.
+        </p>
+        <CTAButton btnText="Sign the fuck up" />
+      </div>
+    </div>
+
+    <div
+      class="hero-image relative z-50 w-full items-center place-content-center md:place-content-end flex md:w-2/6">
+      <div
+        class="image-wrapper rounded-full w-60 h-auto overflow-hidden border-2 border-slate-200 aspect-square">
+        <img
+          src="../assets/images/JohnMac-AvatarBW.jpeg"
+          width="100%"
+          height="auto"
+          alt="John Mac"
+          class="object-cover"
+        />
+      </div>
+    </div>
+    <div
+      class="absolute top-52 -right-16 w-72 h-72 filter blur-3xl bg-purple-700 opacity-30 z-1 rounded-full">
+    </div>
+  </div>
+  <div class="w-full absolute bottom-0">
+    <img src={Divider} width="101%" height="auto" alt="" />
+  </div>
+</section>

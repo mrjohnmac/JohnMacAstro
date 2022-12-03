@@ -1,0 +1,40 @@
+---
+import MainHead from "./MainHead.astro";
+import TestimonialCard from "./TestimonialCard.astro";
+---
+
+<section class="bg-primary-900 pt-24">
+  <!-- Testimonals wrapper  -->
+  <div class="testimonials-wrapper wrapper">
+    <div
+      class="tm-container bg-white rounded-xl translate-y-16 shadow-lg py-32 box-padding">
+      <div class="tm-heading-wrapper mb-32">
+        <h2>The latest praise, love, and wize words from previous clients.</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
+          hic?
+        </p>
+      </div>
+      <div class="tm-wrapper grid grid-cols-1 lg:grid-cols-3 gap-16">
+        <TestimonialCard
+          tmName="Amanda Marochko"
+          tmTitle="Partnerships & International Growth EMEA, Shopify Inc."
+          tmImage="../assets/images/Amanda.jpg"
+          tmBody="Having been John's Partner Manager at Shopify, I can attest to the high quality of work he produces for his clients and how vital he has been to our growth, not only in Norway but in the rest of the Nordics as well. As one of our first European partners, John has been one of the first people I turn to when validating decisions about his markets."
+        />
+        <TestimonialCard
+          tmName="Tom Morkes"
+          tmTitle="CEO Insurgent Publishing, Cofounder at Infostack.io"
+          tmImage="../assets/images/tommorkes.jpg"
+          tmBody="Besides working through our re-design process, user UI/UX, Johnny has helped us built a sophisticated and flexible solution. It has streamlined so many of our backend processes and simplified our work building sales pages and deploying content. It's now 10x faster than a year ago. He is easy to communicate with, good at problem-solving, quick in solutions, and over-delivers on expectations."
+        />
+        <TestimonialCard
+          tmName="Philippa Gillstrom"
+          tmTitle="Mindset Mentor & Community Builder at PhilippaGillstrom.com."
+          tmImage="../assets/images/philippagillstrom.jpg"
+          tmBody="Philippa Gillström is a Mindset Mentor & Thinking Partner. I collaborate with high-performing leaders, executives & entrepreneurs who are looking to make a big impact and lead their lives from their deepest desires."
+        />
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,44 @@
+---
+import BrandImages from "./BrandImages.astro";
+---
+
+<footer class="wrapper w-full bg-white pt-44">
+  <div
+    class="footer-wrapper relative overflow-hidden text-white w-full gap-32 bg-primary-900 rounded-lg flex flex-col lg:flex-row py-16 px-16 mb-16">
+    <div class="footer-section z-10 flex flex-col lg:w-1/2 w-full">
+      <h4 class="footer-header text-slate-50 mb-2">Website build process</h4>
+      <p class="font-light text-sm mb-12">
+        Romantically written in HTML on Astro. Cosmetically beautified with
+        TailwindCSS. Sourced by Github. Distributed by Render. A handcrafted
+        design by John Mac.
+      </p>
+      <BrandImages />
+    </div>
+
+    <div class="footer-section flex flex-col w-full lg:w-1/2">
+      <div
+        class="footer-menu-wrapper flex flex-col gap-8 xl:flex-row xl:gap-32 md:flex-row lg:flex-col md:gap-32 lg:gap-8 z-10">
+        <div class="menu-one">
+          <h4 class="footer-header text-slate-50 mb-2">More information</h4>
+          <ul>
+            <li><a href="#">Reach out</a></li>
+            <li><a href="#">Get the book</a></li>
+            <li><a href="#">Download Beginners Guide</a></li>
+          </ul>
+        </div>
+        <div class="menu-two">
+          <h4 class="footer-header text-slate-50 mb-2">Useful links</h4>
+          <ul>
+            <li><a href="#">Get in touch</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Gradient -->
+    <div
+      class="absolute top-22 left-32 w-72 h-72 filter blur-3xl bg-purple-700 opacity-30 z-1 rounded-full">
+    </div>
+  </div>
+</footer>

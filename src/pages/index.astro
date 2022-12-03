@@ -1,0 +1,83 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+import MainHero from "../components/MainHero.astro";
+import BrandImages from "../components/BrandImages.astro";
+import ImageGrid from "../components/ImageGrid.astro";
+import Testimonials from "../components/Testimonials.astro";
+import Footer from "../components/Footer.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import InstagramFeed from "../components/InstagramFeed.astro";
+---
+
+<MainLayout>
+  <MainHero />
+  <main class="wrapper w-full">
+    <section
+      class="thework-wrapper flex flex-col-reverse md:flex-row gap-28 w-full">
+      <article class="the-work flex flex-col w-full space-y-6 md:w-1/2">
+        <h2>The Work</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+          odit itaque vero voluptates perspiciatis atque eveniet ab. Distinctio
+          necessitatibus voluptatibus adipisci, architecto commodi voluptatem,
+          ea velit eligendi nihil atque molestias.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+          illo vero harum numquam quisquam, laudantium modi molestias
+          voluptates.
+        </p>
+        <div
+          class="terminal bg-primary-900 text-white py-1 px-4 rounded-md mb-2 w-full">
+          <span class="font-code text-sm"
+            >Nullam quis imperdiet augue. Vestibulum auctor leo, code</span
+          >
+        </div>
+        <BrandImages />
+      </article>
+      <div class="image-grid flex w-full justify-center md:w-1/2">
+        <figure class="flex w-full items-center justify-center">
+          <InstagramFeed />
+        </figure>
+      </div>
+    </section>
+    <!--The Work -->
+
+    <section class="lifestyle mb-40 flex flex-col md:flex-row gap-28">
+      <picture
+        class="rounded-xl overflow-hidden shadow-md w-full md:w-1/2 bg-slate-900">
+        <img
+          src="../assets/images/image-slide-lifestyle-one.jpeg"
+          alt="Lifestyle images"
+          width="100%"
+          height="auto"
+          class="object-cover h-full"
+        />
+      </picture>
+
+      <article
+        class="flex flex-col space-y-6 w-full justify-center text-justify md:w-1/2">
+        <h2>The Lifestyle</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quam
+          repudiandae molestias voluptatibus molestiae neque eveniet ea
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+          temporibus asperiores repudiandae nostrum recusandae provident
+          impedit. Optio totam delectus soluta.
+        </p>
+        <p class="font-hand text-right text-2xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+          laborum!
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+          architecto.
+        </p>
+      </article>
+    </section>
+  </main>
+  <Testimonials />
+</MainLayout>
