@@ -1,6 +1,6 @@
 ---
 import CTAButton from "./CTAButton.astro";
-import Divider from "../assets/images/Divider.svg";
+import Divider from "./Divider.astro";
 import Placeholder from "../assets/images/placeholder.jpg";
 
 export interface Props {
@@ -51,6 +51,6 @@ const {
     </div>
   </div>
   <div class="w-full absolute bottom-0">
-    <img src={Divider} width="101%" height="auto" alt="" />
+    <Divider />
   </div>
 </section>
