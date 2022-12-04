@@ -1,6 +1,7 @@
 ---
 import CTAButton from "./CTAButton.astro";
 import Divider from "../components/Divider.astro";
+import DividerImg from "/assets/images/divider.svg";
 ---
 
 <section
@@ -43,6 +44,6 @@ import Divider from "../components/Divider.astro";
     </div>
   </div>
   <div class="w-full absolute bottom-0">
-    <Divider />
+    <img src={DividerImg} alt="Divider" width="100%" height="auto" />
   </div>
 </section>
