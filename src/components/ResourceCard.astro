@@ -2,10 +2,10 @@
 import Placeholder from "/assets/images/grid-image-two.jpg";
 
 export interface Props {
-  image: string;
-  title: string;
-  description: string;
-  link: string;
+  image?: string;
+  title?: string;
+  description?: string;
+  link?: string;
 }
 
 const {
@@ -27,7 +27,7 @@ const {
     >
   </div>
   <div class="resource-body md:py-4 md:px-3">
-    <h4 class="text-primary-500">{title}</h4>
+    <h4 class="text-primary-500 mb-2">{title}</h4>
     <p class="text-base">{description}</p>
 
     <span
@@ -37,14 +37,6 @@ const {
   </div>
 </figure>
 <style>
-  @keyframes cardHover {
-    from {
-      transform: translate(0px, 0px);
-    }
-    to {
-      transform: translate(0px, -5px);
-    }
-  }
   .resource-card {
     transition: 0.2s all ease;
   }

@@ -4,9 +4,9 @@ import Divider from "./Divider.astro";
 import Placeholder from "/assets/images/article-archive.jpg";
 
 export interface Props {
-  pageTitle: string;
-  pageSubtitle: string;
-  heroImage: string;
+  pageTitle?: string;
+  pageSubtitle?: string;
+  heroImage?: string;
 }
 const {
   pageTitle = "New Page",

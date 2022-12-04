@@ -11,7 +11,7 @@ import ResourceCard from "../components/ResourceCard.astro";
     pageSubtitle="Discover apps, tools, services, and plugins that I use and recommend. A condenced collection of resources, if you're wondering what tools to use."
   />
   <section class="wrapper">
-    <div class="subhead-wrapper mb-24">
+    <div class="subhead-wrapper mt-16 mb-24">
       <h2>Website Pagebuilders and systems</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis
@@ -20,10 +20,28 @@ import ResourceCard from "../components/ResourceCard.astro";
       </p>
     </div>
     <div class="grid grid-col-1 lg:grid-cols-2 gap-x-16">
-      <ResourceCard />
-      <ResourceCard />
-      <ResourceCard />
-      <ResourceCard />
+      <ResourceCard
+        title="Bricks Builder"
+        link="https://bricksbuilder.io"
+        description="One of the fastest professional page builders for WordPress now."
+      />
+      <ResourceCard title="Oxygen Builder" />
+      <ResourceCard title="Divi Theme (Builder)" />
+    </div>
+  </section>
+
+  <section class="wrapper">
+    <div class="subhead-wrapper mt-16 mb-24">
+      <h2 class="subhead-wrapper">Recommended WordPress Plugins</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
+        dolor eos accusantium est, harum ab recusandae incidunt doloremque odit
+        cumque.
+      </p>
+    </div>
+    <div class="grid grid-col-1 lg:grid-cols-2 gap-x-16">
+      <ResourceCard title="Metabox" />
+      <ResourceCard title="WPGrid Builder" />
     </div>
   </section>
 </MainLayout>
